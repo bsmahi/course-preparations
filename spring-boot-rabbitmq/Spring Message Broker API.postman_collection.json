@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "64c487a3-ce10-49cf-bfd5-5ae46abdc940",
+		"name": "Spring Message Broker API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25927703"
+	},
+	"item": [
+		{
+			"name": "produce",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"message\": \"Hello, RabbitMQ!\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9100/api/produce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9100",
+					"path": [
+						"api",
+						"produce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consume",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9100/api/consume",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9100",
+					"path": [
+						"api",
+						"consume"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
