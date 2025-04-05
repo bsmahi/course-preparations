@@ -1,4 +1,4 @@
-# Spring Boot RabbitMQ Integration
+# Spring Boot With RabbitMQ Integration
 
 This project demonstrates how to integrate RabbitMQ with a Spring Boot application using different exchange types:
 - Direct Exchange
@@ -181,3 +181,4 @@ See `SpringMessageBrokerAPI.postman_collection.json` for ready-to-use API tests.
 
 ---
 
+Happy Coding @in28minutes
