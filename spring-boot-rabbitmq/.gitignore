@@ -1,9 +1,0 @@
-# Ignore IDE settings and build output
-.idea/
-target/
-
-# Environment variables
-.env
-
-# macOS system file
-.DS_Store

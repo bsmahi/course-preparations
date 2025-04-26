@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "bacdc6a2-cb29-4675-906c-55858d3ddf64",
+		"name": "Spring Boot Kafka App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25927703"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/produce",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"message\": \"Hello from Postman\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/produce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"produce"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
